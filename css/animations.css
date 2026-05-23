@@ -1,0 +1,627 @@
+/* =========================================================
+   FATIMA'S KITCHEN
+   ANIMATIONS.CSS
+========================================================= */
+
+
+
+/* =========================================================
+   GLOBAL TRANSITIONS
+========================================================= */
+
+* {
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease,
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+
+/* =========================================================
+   FADE IN ANIMATION
+========================================================= */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.fade-in {
+
+    animation: fadeIn 1s ease forwards;
+
+}
+
+
+
+/* =========================================================
+   HERO TITLE ANIMATION
+========================================================= */
+
+@keyframes heroTitle {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(80px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.hero-content h1 {
+
+    animation: heroTitle 1.2s ease;
+
+}
+
+
+
+/* =========================================================
+   HERO PARAGRAPH
+========================================================= */
+
+@keyframes heroParagraph {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(50px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.hero-content p {
+
+    animation: heroParagraph 1.6s ease;
+
+}
+
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+@keyframes heroButtons {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.8);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+.hero-buttons {
+
+    animation: heroButtons 2s ease;
+
+}
+
+
+
+/* =========================================================
+   FLOATING EFFECT
+========================================================= */
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+.floating {
+
+    animation: floating 4s ease-in-out infinite;
+
+}
+
+
+
+/* =========================================================
+   IMAGE HOVER ZOOM
+========================================================= */
+
+.platter-card img,
+.menu-card img,
+.speciality-image img,
+.about-image img,
+.contact-image img {
+
+    transition: transform 0.7s ease;
+
+}
+
+.platter-card:hover img,
+.menu-card:hover img,
+.speciality-image:hover img,
+.about-image:hover img,
+.contact-image:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+/* =========================================================
+   CARD GLOW EFFECT
+========================================================= */
+
+.platter-card:hover,
+.menu-card:hover,
+.experience-card:hover,
+.contact-card:hover {
+
+    box-shadow:
+        0 15px 40px rgba(212,175,55,0.12);
+
+}
+
+
+
+/* =========================================================
+   BUTTON SHINE EFFECT
+========================================================= */
+
+.btn,
+.card-btn,
+.add-order-btn,
+.whatsapp-order-btn,
+.contact-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.btn::before,
+.card-btn::before,
+.add-order-btn::before,
+.whatsapp-order-btn::before,
+.contact-btn::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.4),
+            transparent
+        );
+
+    transition: 0.7s;
+
+}
+
+.btn:hover::before,
+.card-btn:hover::before,
+.add-order-btn:hover::before,
+.whatsapp-order-btn:hover::before,
+.contact-btn:hover::before {
+
+    left: 100%;
+
+}
+
+
+
+/* =========================================================
+   NAVBAR LINK EFFECT
+========================================================= */
+
+.nav-links li a {
+
+    transition: color 0.4s ease;
+
+}
+
+.nav-links li a:hover {
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* =========================================================
+   HERO IMAGE OVERLAY PULSE
+========================================================= */
+
+@keyframes overlayPulse {
+
+    0% {
+
+        opacity: 0.65;
+
+    }
+
+    50% {
+
+        opacity: 0.8;
+
+    }
+
+    100% {
+
+        opacity: 0.65;
+
+    }
+
+}
+
+.hero-overlay {
+
+    animation: overlayPulse 5s ease infinite;
+
+}
+
+
+
+/* =========================================================
+   PAGE HERO ZOOM EFFECT
+========================================================= */
+
+.page-hero {
+
+    animation: heroZoom 15s ease infinite alternate;
+
+}
+
+@keyframes heroZoom {
+
+    from {
+
+        background-size: 100%;
+
+    }
+
+    to {
+
+        background-size: 110%;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   QR IMAGE FLOAT
+========================================================= */
+
+.qr-image img {
+
+    animation: floating 5s ease-in-out infinite;
+
+}
+
+
+
+/* =========================================================
+   SCROLL REVEAL BASE
+========================================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    transition: 1s ease;
+
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+
+/* =========================================================
+   TEXT GLOW
+========================================================= */
+
+.text-gold {
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,0.3),
+        0 0 20px rgba(212,175,55,0.2);
+
+}
+
+
+
+/* =========================================================
+   GOLDEN BORDER ANIMATION
+========================================================= */
+
+@keyframes borderGlow {
+
+    0% {
+
+        border-color: rgba(212,175,55,0.2);
+
+    }
+
+    50% {
+
+        border-color: rgba(212,175,55,0.8);
+
+    }
+
+    100% {
+
+        border-color: rgba(212,175,55,0.2);
+
+    }
+
+}
+
+.gold-border {
+
+    animation: borderGlow 3s linear infinite;
+
+}
+
+
+
+/* =========================================================
+   FOOTER LINK HOVER
+========================================================= */
+
+.footer-box ul li a:hover {
+
+    transform: translateX(6px);
+
+}
+
+
+
+/* =========================================================
+   ORDER BOX ANIMATION
+========================================================= */
+
+.order-summary-box {
+
+    animation: fadeIn 1s ease;
+
+}
+
+
+
+/* =========================================================
+   BOUNCE BUTTON
+========================================================= */
+
+@keyframes bounceBtn {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.05);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.whatsapp-order-btn:hover {
+
+    animation: bounceBtn 0.6s ease;
+
+}
+
+
+
+/* =========================================================
+   IMAGE SHADOW HOVER
+========================================================= */
+
+img {
+
+    transition:
+        transform 0.6s ease,
+        box-shadow 0.6s ease;
+
+}
+
+img:hover {
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.4);
+
+}
+
+
+
+/* =========================================================
+   SECTION TITLE EFFECT
+========================================================= */
+
+.section-heading h2 {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+.section-heading h2::after {
+
+    content: '';
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    bottom: -12px;
+
+    width: 80px;
+
+    height: 3px;
+
+    background: var(--primary-color);
+
+    border-radius: 50px;
+
+}
+
+
+
+/* =========================================================
+   CARD FLOAT ON HOVER
+========================================================= */
+
+.platter-card:hover,
+.menu-card:hover {
+
+    transform:
+        translateY(-12px)
+        scale(1.01);
+
+}
+
+
+
+/* =========================================================
+   INPUT FOCUS EFFECT
+========================================================= */
+
+input:focus,
+textarea:focus {
+
+    border-color: var(--primary-color);
+
+    box-shadow:
+        0 0 15px rgba(212,175,55,0.2);
+
+}
+
+
+
+/* =========================================================
+   SMOOTH APPEAR
+========================================================= */
+
+@keyframes smoothAppear {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+body {
+
+    animation: smoothAppear 0.6s ease;
+
+}
+
+
+
+/* =========================================================
+   END OF ANIMATIONS.CSS
+========================================================= */

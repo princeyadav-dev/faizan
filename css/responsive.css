@@ -1,0 +1,547 @@
+/* =========================================================
+   FATIMA'S KITCHEN
+   RESPONSIVE.CSS
+========================================================= */
+
+
+
+/* =========================================================
+   LARGE LAPTOPS
+========================================================= */
+
+@media (max-width: 1400px) {
+
+    .hero-content h1 {
+
+        font-size: 72px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   LAPTOP DEVICES
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .hero-content h1 {
+
+        font-size: 64px;
+
+    }
+
+    .page-hero-content h1 {
+
+        font-size: 56px;
+
+    }
+
+    .about-grid,
+    .specialities-grid,
+    .contact-grid,
+    .qr-info-grid,
+    .qr-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 992px) {
+
+    section {
+
+        padding: 80px 0;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 44px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 56px;
+
+    }
+
+    .hero-content p {
+
+        font-size: 18px;
+
+    }
+
+    .page-hero-content h1 {
+
+        font-size: 48px;
+
+    }
+
+    .about-content h2,
+    .speciality-content h2,
+    .contact-details h2,
+    .qr-info-content h2,
+    .qr-text h2 {
+
+        font-size: 44px;
+
+    }
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE NAVBAR
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+
+        padding: 18px 5%;
+
+    }
+
+    .logo a {
+
+        font-size: 28px;
+
+    }
+
+    .mobile-menu-btn {
+
+        display: block;
+
+        z-index: 2000;
+
+    }
+
+    .navbar {
+
+        position: fixed;
+
+        top: 0;
+
+        right: -100%;
+
+        width: 280px;
+
+        height: 100vh;
+
+        background: #111;
+
+        padding-top: 120px;
+
+        transition: 0.5s ease;
+
+        z-index: 1500;
+
+    }
+
+    .navbar.active {
+
+        right: 0;
+
+    }
+
+    .nav-links {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+
+    }
+
+    .nav-links li a {
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 768px) {
+
+    section {
+
+        padding: 70px 0;
+
+    }
+
+    .container {
+
+        width: 92%;
+
+    }
+
+    .hero {
+
+        height: 90vh;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero-content p {
+
+        font-size: 16px;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        align-items: center;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+        max-width: 300px;
+
+        text-align: center;
+
+    }
+
+    .page-hero {
+
+        height: 50vh;
+
+    }
+
+    .page-hero-content h1 {
+
+        font-size: 38px;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 38px;
+
+    }
+
+    .about-content h2,
+    .speciality-content h2,
+    .contact-details h2,
+    .qr-info-content h2,
+    .qr-text h2 {
+
+        font-size: 38px;
+
+    }
+
+    .platter-grid,
+    .menu-grid,
+    .platters-grid,
+    .experience-grid,
+    .stats-grid,
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .qr-steps {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .order-summary-box {
+
+        padding: 30px 20px;
+
+    }
+
+    .total-price-box {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+
+    }
+
+    .contact-action-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .contact-btn {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .hero-content h1 {
+
+        font-size: 34px;
+
+        line-height: 1.3;
+
+    }
+
+    .hero-content p {
+
+        font-size: 15px;
+
+    }
+
+    .page-hero-content h1 {
+
+        font-size: 30px;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+    .about-content h2,
+    .speciality-content h2,
+    .contact-details h2,
+    .qr-info-content h2,
+    .qr-text h2 {
+
+        font-size: 32px;
+
+    }
+
+    .platter-content h3,
+    .menu-card-content h3 {
+
+        font-size: 24px;
+
+    }
+
+    .platter-content h4 {
+
+        font-size: 28px;
+
+    }
+
+    .order-summary-box h2 {
+
+        font-size: 32px;
+
+    }
+
+    .total-price-box span {
+
+        font-size: 30px;
+
+    }
+
+    .stat-box h2 {
+
+        font-size: 42px;
+
+    }
+
+    .footer-box h3 {
+
+        font-size: 26px;
+
+    }
+
+    .contact-card {
+
+        flex-direction: column;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+
+        font-size: 28px;
+
+    }
+
+    .page-hero-content h1 {
+
+        font-size: 26px;
+
+    }
+
+    .btn {
+
+        padding: 13px 22px;
+
+        font-size: 14px;
+
+    }
+
+    .menu-card-content,
+    .platter-content {
+
+        padding: 20px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero {
+
+        height: 140vh;
+
+    }
+
+    .page-hero {
+
+        height: 90vh;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   TOUCH DEVICE IMPROVEMENTS
+========================================================= */
+
+@media (hover: none) {
+
+    .platter-card:hover,
+    .menu-card:hover,
+    .experience-card:hover,
+    .contact-card:hover {
+
+        transform: none;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   HIGH RESOLUTION DEVICES
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .container {
+
+        max-width: 1550px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 100px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   PRINT MODE
+========================================================= */
+
+@media print {
+
+    .header,
+    .footer,
+    .whatsapp-order-btn,
+    .contact-btn {
+
+        display: none;
+
+    }
+
+    body {
+
+        background: white;
+
+        color: black;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   END OF RESPONSIVE.CSS
+========================================================= */
